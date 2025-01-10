@@ -32,7 +32,7 @@ free -h
 # create backup just in case
 sudo cp /etc/fstab /etc/fstab.bak
 # add swap info
-echo '/swapfile none swap sw 0 0' | sudo tree -a /etc/fstab
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 # Tuning your swap settings
 # adjust swapppiness property
